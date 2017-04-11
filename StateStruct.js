@@ -169,6 +169,10 @@ export default class StateStruct {
     return this._status !== NONE_STATUS;
   }
 
+  hasError(): boolean {
+    return this._error !== null;
+  }
+
   getStatus(): string {
     return this._status;
   }
