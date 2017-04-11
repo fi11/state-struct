@@ -1,0 +1,23 @@
+{
+  "name": "state-struct",
+  "version": "0.0.1",
+  "description": "immutable structure for state with value, status, error, and timestamp",
+  "author": "Pavel Silin <pavelsilinw@gmail.com>",
+  "bugs": "https://github.com/fi11/state-struct/issue",
+  "homepage": "https://github.com/fi11/state-struct",
+  "keywords": [
+    "state",
+    "immutable",
+    "status",
+    "object"
+  ],
+  "main": "StateStruct.js",
+  "license": "MIT",
+  "devDependencies": {
+    "flow-bin": "0.43.1",
+    "jest": "19.0.2"
+  },
+  "scripts": {
+    "typecheck": "flow check"
+  }
+}
