@@ -1,7 +1,7 @@
 {
   "name": "state-struct",
   "version": "0.0.1",
-  "description": "immutable structure for state with value, status, error, and timestamp",
+  "description": "Immutable structure for state with value, status, error, and timestamp",
   "author": "Pavel Silin <pavelsilinw@gmail.com>",
   "bugs": "https://github.com/fi11/state-struct/issue",
   "homepage": "https://github.com/fi11/state-struct",
@@ -11,13 +11,22 @@
     "status",
     "object"
   ],
-  "main": "StateStruct.js",
+  "main": "lib/StateStruct.js",
   "license": "MIT",
   "devDependencies": {
     "flow-bin": "0.43.1",
-    "jest": "19.0.2"
+    "babel-cli": "6.24.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.23.0",
+    "babel-plugin-transform-strict-mode": "6.24.1",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1"
   },
   "scripts": {
+    "build:commonjs": "npm run clean:commonjs && export NODE_ENV=production && babel ./src --out-dir ./lib",
+    "clean:commonjs": "rm -rf ./lib",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build:commonjs",
     "typecheck": "flow check"
   }
 }

@@ -1,6 +1,4 @@
 // @flow
-'use strict';
-
 /**
  * A secret key that is used to prevent direct construction of these objects,
  * this is effectively used to ensure that the constructor is private.
