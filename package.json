@@ -1,6 +1,6 @@
 {
   "name": "state-struct",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Immutable structure for state with value, status, error, and timestamp",
   "author": "Pavel Silin <pavelsilinw@gmail.com>",
   "bugs": "https://github.com/fi11/state-struct/issue",
